@@ -71,17 +71,31 @@ Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('
 
 Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('Go to chrurch','ask for forgiveness' , 5, '2017-08-31 10:23:54','2017-09-01 10:25:30');
 
-Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('do not get behind','work it work it' , 3, '2017-08-31 10:23:54');
+Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('do not get behind','work it work it'
+ , 3, '2017-08-31 10:23:54', null);
 
-Insert INTO todos (title, details, priority, created_at, completed_at) VALUES (‘No diggity’,’back it up’ , 3, ‘2017-08-31 10:23:54’);
+Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('No diggity','back it up' , 3,
+'2017-08-31 10:23:54', null);
 
-Insert INTO todos (title, details, priority, created_at, completed_at) VALUES (‘Find out who let the dogs out ’,’The baja men did’ , 3, ‘2017-08-31 10:23:54’);
+Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('Find out who let the dogs out','The ' ||
+                                                                                                               'baja ' ||
+                                                                                                               'men ' ||
+                                                                                                               'did'
+ , 3, '2017-08-31 10:23:54', NULL );
 
-Insert INTO todos (title, details, priority, created_at, completed_at) VALUES (‘Find the penaut ’,’Mr. Planters wont take no for an answer’ , 3, ‘2017-08-31 10:23:54’);
+Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('Find the penaut','Mr. Planters wont ' ||
+                                                                                                 'take no for an ' ||
+                                                                                                 'answer' , 3,
+                                                                               '2017-08-31 10:23:54', null);
 
-Insert INTO todos (title, details, priority, created_at, completed_at) VALUES (‘9/11 was not a inside job’,’make tin foil hats’ , 3, ‘2017-08-31 10:23:54’);
+Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('9/11 was not a inside job','make tin ' ||
+                                                                                                           'foil ' ||
+                                                                                                           'hats' ,
+                                                                               3, '2017-08-31 10:23:54', null);
 
-Insert INTO todos (title, details, priority, created_at, completed_at) VALUES (‘You are not special nothing matters’,’so why worry’ , 5, ‘2017-08-31 10:23:54’);
+Insert INTO todos (title, details, priority, created_at, completed_at) VALUES ('You are not special nothing matters',
+                                                                               'so why worry' , 5, '2017-08-31 ' ||
+                                                                                                   '10:23:54' null);
 
 
 2. Write a SELECT statement to find all incomplete todos with priority 3.
